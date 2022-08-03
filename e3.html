@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+}
+
+
+.dropdown-content a {
+  
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+</style>
+</head>
+<body align = "center">
+<h3              >Dine Booking </h3>
+
+
+visitor name:<input type="text" size="20" name="vname"><br>
+<tr>
+<td>Number of members:</td>
+<td><input type="number" size="2"></td>
+</tr><br>
+<tr>
+<td>Contact no:</td>
+<td><input type="number"></td>
+</tr><br>
+<tr>
+<td>Email:</td>
+<td><input type="email"></td>
+</tr><br>
+<tr>
+<td>Type of food:</td>
+<td><input type="checkbox" name="type of food" value="south indian">south indian
+    <input type="checkbox" name="type of food" value="north indian">north indian
+    <input type="checkbox" name="type of food" value="chinese">chinese
+    <input type="checkbox" name="type of food" value="western">western
+</td>
+</tr><br>
+<tr>
+<td>Room status:</td>
+<td><input type="radio" name="room status" value="AC">AC
+    <input type="radio" name="room status" value="Non-AC">Non-AC
+</td>
+</tr><br>
+<tr>
+<td>Venue preference:</td>
+<td>
+<div class="dropdown">
+  <button class="dropbtn">select</button>
+  <div class="dropdown-content">
+    <a href="#">arena</a>
+    <a href="#">fiesta</a>
+    <a href="#">vista</a>
+    <a href="#">mythri</a>
+     <a href="#">magna</a>
+  </div>
+</div>
+
+</tr><br>
+<tr>
+<td><input type="submit" value="Book"></td></tr>
+<tr><td><input type="reset" value="reset"></td>
+</tr><br>
+
+</body>
+</html>
+
